@@ -512,7 +512,7 @@ function sources(v) {
       <div class="ph"><div><h2 id="ig-h">Instagram</h2><p>How FraudLens reads Instagram profiles.</p></div><span class="pill ${c.demo ? 'in' : 'lo'}">${c.demo ? 'Demo data' : 'Live'}</span></div>
       <div class="stack" style="gap:8px" role="radiogroup" aria-label="Instagram source">
         ${[['auto', 'Automatic', 'Graph API when a token is saved, otherwise public profiles (using the saved session, if any).'], ['web', 'Public profiles', 'No setup. Reads any public profile. If Instagram rate-limits it, FraudLens falls back to the public profile page (name, picture and counts only). Results are cached for 6 hours.'], ['graph', 'Instagram Graph API', 'Official. Needs a Meta app token and your Instagram business account ID. Sees business and creator accounts only.']]
-          .map(([k, n, d]) => `<label class="mi radio${c.igMode === k ? ' on' : ''}" style="cursor:pointer"><input type="radio" name="igMode" value="${k}" ${c.igMode === k ? 'checked' : ''}><span><span style="display:block">${n}</span><small>${d}</small></span></label>`).join('')}
+          .map(([k, n, d]) => `<label class="mi radio${c.igMode === k ? ' on' : ''}" style="cursor:pointer"><input type="radio" name="igMode" value="${k}" ${c.igMode === k ? 'checked' : ''} ${c.hosted ? 'disabled' : ''}><span><span style="display:block">${n}</span><small>${d}</small></span></label>`).join('')}
       </div>
       <div class="two" style="margin-top:14px;gap:12px">
         <div class="field"><label for="gUser">Your Instagram business account ID</label><input type="text" id="gUser" ${c.hosted ? 'disabled' : ''} value="${esc(c.graphUserId || '')}" placeholder="1784…"></div>
