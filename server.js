@@ -12,11 +12,14 @@ import { officialRegistry, parseHandle } from './public/js/detect.js';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC = path.join(ROOT, 'public');
-const DATA = path.join(ROOT, 'data');
+// On Vercel the code folder is read-only and instances are short-lived, so state goes to /tmp
+// and the hosted copy always runs on the bundled demo data.
+const HOSTED = !!process.env.VERCEL;
+const DATA = HOSTED ? path.join('/tmp', 'fraudlens-data') : path.join(ROOT, 'data');
 const CACHE = path.join(DATA, 'cache');
 const FIXTURES = path.join(ROOT, 'fixtures');
 const PORT = Number(process.env.PORT || 4321);
-const DEMO_FLAG = process.argv.includes('--demo') || process.env.FRAUDLENS_DEMO === '1';
+const DEMO_FLAG = HOSTED || process.argv.includes('--demo') || process.env.FRAUDLENS_DEMO === '1';
 
 const IG_APP_ID = '936619743392459'; // Instagram web app id used by instagram.com itself
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36';
@@ -282,7 +285,7 @@ async function body(req) {
   for await (const c of req) { size += c.length; if (size > 8e6) throw new FetchError('too_large', 'Request too large', 413); chunks.push(c); }
   try { return JSON.parse(Buffer.concat(chunks).toString('utf8') || '{}'); } catch { throw new FetchError('bad_json', 'Invalid JSON', 400); }
 }
-function publicConfig(c) { return { igMode: c.igMode, graphConfigured: !!(c.graphToken && c.graphUserId), sessionConfigured: !!c.igSessionId, graphUserId: c.graphUserId, demo: DEMO_FLAG || c.demo === true, demoForced: DEMO_FLAG, country: c.country }; }
+function publicConfig(c) { return { igMode: c.igMode, graphConfigured: !!(c.graphToken && c.graphUserId), sessionConfigured: !!c.igSessionId, graphUserId: c.graphUserId, demo: DEMO_FLAG || c.demo === true, demoForced: DEMO_FLAG, hosted: HOSTED, country: c.country }; }
 
 async function handle(req, res) {
   const url = new URL(req.url, 'http://localhost');
@@ -302,6 +305,7 @@ async function handle(req, res) {
     }
     if (p === '/api/config' && req.method === 'PUT') {
       const b = await body(req); const c = await readJson('config.json');
+      if (HOSTED) { delete b.graphUserId; delete b.graphToken; delete b.igSessionId; } // the hosted demo is shared, so it never stores credentials
       for (const k of ['igMode', 'graphUserId', 'country']) if (b[k] != null) c[k] = String(b[k]);
       if (b.graphToken != null && b.graphToken !== '••••') c.graphToken = String(b.graphToken);
       if (b.igSessionId != null && b.igSessionId !== '••••') { let v = String(b.igSessionId); try { v = decodeURIComponent(v); } catch {} c.igSessionId = v.replace(/^sessionid=/, '').replace(/;.*$/, '').trim(); }
@@ -350,10 +354,27 @@ async function handle(req, res) {
   }
 }
 
-await fs.mkdir(CACHE, { recursive: true });
-if (!existsSync(path.join(DATA, 'brand.json')) && existsSync(path.join(FIXTURES, 'demo-brand.json')) && DEMO_FLAG) {
-  for (const name of ['brand.json', 'watchlist.json']) await fs.copyFile(path.join(FIXTURES, 'demo-' + name), path.join(DATA, name));
+let ready;
+function init() { // create the data folder, and seed the demo brand on a demo first run
+  ready ||= (async () => {
+    await fs.mkdir(CACHE, { recursive: true });
+    if (DEMO_FLAG && !existsSync(path.join(DATA, 'brand.json')) && existsSync(path.join(FIXTURES, 'demo-brand.json'))) {
+      for (const name of ['brand.json', 'watchlist.json']) await fs.copyFile(path.join(FIXTURES, 'demo-' + name), path.join(DATA, name));
+    }
+  })();
+  return ready;
 }
-http.createServer(handle).listen(PORT, '127.0.0.1', () => {
-  console.log(`\n  FraudLens is running at http://localhost:${PORT}${DEMO_FLAG ? '   (demo data mode)' : ''}\n`);
-});
+
+// Vercel calls this for every request (see api/index.js).
+export default async function handler(req, res) {
+  await init();
+  return handle(req, res);
+}
+
+// Local run: node server.js [--demo]
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  await init();
+  http.createServer(handle).listen(PORT, '127.0.0.1', () => {
+    console.log(`\n  FraudLens is running at http://localhost:${PORT}${DEMO_FLAG ? '   (demo data mode)' : ''}\n`);
+  });
+}

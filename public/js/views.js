@@ -515,23 +515,23 @@ function sources(v) {
           .map(([k, n, d]) => `<label class="mi radio${c.igMode === k ? ' on' : ''}" style="cursor:pointer"><input type="radio" name="igMode" value="${k}" ${c.igMode === k ? 'checked' : ''}><span><span style="display:block">${n}</span><small>${d}</small></span></label>`).join('')}
       </div>
       <div class="two" style="margin-top:14px;gap:12px">
-        <div class="field"><label for="gUser">Your Instagram business account ID</label><input type="text" id="gUser" value="${esc(c.graphUserId || '')}" placeholder="1784…"></div>
-        <div class="field"><label for="gTok">Graph API access token</label><input type="password" id="gTok" value="${c.graphConfigured ? '••••' : ''}" placeholder="Paste a long-lived token" autocomplete="off"></div>
+        <div class="field"><label for="gUser">Your Instagram business account ID</label><input type="text" id="gUser" ${c.hosted ? 'disabled' : ''} value="${esc(c.graphUserId || '')}" placeholder="1784…"></div>
+        <div class="field"><label for="gTok">Graph API access token</label><input type="password" id="gTok" ${c.hosted ? 'disabled' : ''} value="${c.graphConfigured ? '••••' : ''}" placeholder="Paste a long-lived token" autocomplete="off"></div>
       </div>
-      <div class="field" style="margin-top:12px"><label for="igSess">Instagram session (optional)</label><input type="password" id="igSess" value="${c.sessionConfigured ? '••••' : ''}" placeholder="Paste the sessionid cookie value" autocomplete="off">
+      <div class="field" style="margin-top:12px"><label for="igSess">Instagram session (optional)</label><input type="password" id="igSess" ${c.hosted ? 'disabled' : ''} value="${c.sessionConfigured ? '••••' : ''}" placeholder="Paste the sessionid cookie value" autocomplete="off">
         <p class="help">Lets public-profile reads get full data when Instagram blocks anonymous requests. Use a spare account, not your main one: Instagram can restrict accounts used for automated reads. Clear the field and save to remove it.</p></div>
-      <p class="help" style="margin-top:6px">Tokens and sessions are stored only in <span class="code">data/config.json</span> on this computer.</p>
-      <div class="row" style="margin-top:14px"><button class="btn pri" id="saveIg">Save</button><button class="btn" id="testIg">Test with an official account</button></div>
+      <p class="help" style="margin-top:6px">${c.hosted ? 'This hosted demo can\'t save tokens or sessions, because it is shared with everyone who opens it. Run FraudLens on your own computer to connect Instagram.' : 'Tokens and sessions are stored only in <span class="code">data/config.json</span> on this computer.'}</p>
+      <div class="row" style="margin-top:14px"><button class="btn pri" id="saveIg" ${c.hosted ? 'disabled' : ''}>Save</button><button class="btn" id="testIg">Test with an official account</button></div>
       <div id="testIgOut" style="margin-top:12px"></div>
     </section>
     <div class="stack">
       <section class="panel" aria-labelledby="as-h">
-        <div class="ph"><div><h2 id="as-h">Apple App Store</h2><p>Public iTunes Search API. No key needed; about 20 requests a minute; results cached for 1 hour.</p></div><span class="pill lo">Live</span></div>
+        <div class="ph"><div><h2 id="as-h">Apple App Store</h2><p>Public iTunes Search API. No key needed; about 20 requests a minute; results cached for 1 hour.</p></div><span class="pill ${c.demo ? 'in' : 'lo'}">${c.demo ? 'Demo data' : 'Live'}</span></div>
         <button class="btn" id="testApp">Test App Store search</button><div id="testAppOut" style="margin-top:12px"></div>
       </section>
       <section class="panel" aria-labelledby="dm-h">
         <div class="ph"><div><h2 id="dm-h">Demo data</h2><p>Bundled sample accounts and apps for presenting without internet. Live sources are not called while it is on.</p></div></div>
-        ${c.demoForced ? '<p class="note">Started with <span class="code">--demo</span>; restart without it for live data.</p>' : `<label class="row" style="gap:10px"><input type="checkbox" id="demoToggle" ${c.demo ? 'checked' : ''}> Use demo data</label>`}
+        ${c.hosted ? '<p class="note">This hosted copy always uses the bundled demo data. Changes you make here are shared with everyone viewing it and reset from time to time. Run FraudLens on your own computer for live Instagram and App Store data.</p>' : c.demoForced ? '<p class="note">Started with <span class="code">--demo</span>; restart without it for live data.</p>' : `<label class="row" style="gap:10px"><input type="checkbox" id="demoToggle" ${c.demo ? 'checked' : ''}> Use demo data</label>`}
         ${c.demo ? '<button class="btn sm" id="demoReset" style="margin-top:12px">Load the demo brand and watchlist</button>' : ''}
       </section>
       <section class="panel" aria-labelledby="ca-h">

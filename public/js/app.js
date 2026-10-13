@@ -358,7 +358,7 @@ export function chrome() {
   const v = D.validateBrand({ ...b, instagramLines: b.instagram, appLines: [] });
   $('#badgeBrand').textContent = brandReady() ? '' : '!';
   $('#modeName').textContent = S.config.demo ? 'Demo data' : 'Live';
-  $('#modeDesc').textContent = S.config.demo ? 'Bundled sample accounts and apps, no network.' : S.config.graphConfigured && S.config.igMode !== 'web' ? 'Instagram Graph API + Apple App Store' : 'Instagram public profiles + Apple App Store';
+  $('#modeDesc').textContent = S.config.hosted ? 'Hosted demo: sample data, edits reset from time to time.' : S.config.demo ? 'Bundled sample accounts and apps, no network.' : S.config.graphConfigured && S.config.igMode !== 'web' ? 'Instagram Graph API + Apple App Store' : 'Instagram public profiles + Apple App Store';
   void v;
 }
 

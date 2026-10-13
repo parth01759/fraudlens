@@ -13,6 +13,10 @@ Needs **Node.js 18 or newer** (check with `node --version`). No `npm install`: t
 
 Then open **http://localhost:4321**. You can also switch demo data on and off under **Monitoring sources**.
 
+## Hosted demo (Vercel)
+
+The repo deploys to Vercel as-is (`vercel.json` and `api/index.js`). The hosted copy always runs on the bundled demo data, because Vercel's servers can't keep files between requests and Instagram blocks data-centre traffic. Anything changed there is shared by everyone viewing it and resets from time to time, and it never stores Instagram or Graph API credentials. For live data, run it locally as above.
+
 ## Use it
 
 1. **Brand profile**: enter the brand name, official Instagram accounts, official iOS apps (bundle ID or App Store ID), official domains and a logo. Select **Look up apps** to confirm the apps and pull the official developer names. Save.
