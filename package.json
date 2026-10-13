@@ -1,0 +1,9 @@
+{
+  "name": "fraudlens-mvp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "FraudLens - digital risk protection MVP for Instagram and the Apple App Store",
+  "scripts": { "start": "node server.js", "demo": "node server.js --demo" },
+  "engines": { "node": ">=18" }
+}

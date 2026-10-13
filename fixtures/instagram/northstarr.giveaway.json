@@ -1,0 +1,28 @@
+{
+ "platform": "instagram",
+ "id": "68210088812",
+ "username": "northstarr.giveaway",
+ "fullName": "Northstarr Labs Giveaway",
+ "bio": "Win a prize today 🎁 Pay a small delivery fee and verify your login to claim.",
+ "externalUrl": "https://northstarr-rewards.com",
+ "bioLinks": [],
+ "profilePic": "/fixtures/img/pfp_northstarr.giveaway.png",
+ "isVerified": false,
+ "isPrivate": false,
+ "isBusiness": true,
+ "category": "",
+ "followers": 212,
+ "following": 12,
+ "mediaCount": 4,
+ "posts": [
+  {
+   "id": "GV0001",
+   "shortcode": "GV0001",
+   "daysAgo": 6,
+   "caption": "3 winners every day! Click the link in bio to claim your reward.",
+   "thumb": "/fixtures/img/post_giveaway_1.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/GV0001/"
+  }
+ ]
+}

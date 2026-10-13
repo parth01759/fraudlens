@@ -1,0 +1,37 @@
+{
+ "platform": "instagram",
+ "id": "68110022451",
+ "username": "northstar_supp0rt",
+ "fullName": "Northstar Support ✔",
+ "bio": "Official Northstar support team. DM us your login email and password to restore access. WhatsApp +91 98765 43210",
+ "externalUrl": "",
+ "bioLinks": [],
+ "profilePic": "/fixtures/img/pfp_northstar_supp0rt.png",
+ "isVerified": false,
+ "isPrivate": false,
+ "isBusiness": true,
+ "category": "",
+ "followers": 37,
+ "following": 12,
+ "mediaCount": 2,
+ "posts": [
+  {
+   "id": "FK0001",
+   "shortcode": "FK0001",
+   "daysAgo": 1,
+   "caption": "Northstar Secure 4.0 is here. Two-factor login, device alerts and a faster vault. Update from the App Store today.",
+   "thumb": "/fixtures/img/post_supp0rt_1.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/FK0001/"
+  },
+  {
+   "id": "FK0002",
+   "shortcode": "FK0002",
+   "daysAgo": 2,
+   "caption": "Account locked? Message us now, we reply in 5 minutes.",
+   "thumb": "/fixtures/img/post_giveaway_2.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/FK0002/"
+  }
+ ]
+}

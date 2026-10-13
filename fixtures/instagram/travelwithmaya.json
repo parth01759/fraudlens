@@ -1,0 +1,28 @@
+{
+ "platform": "instagram",
+ "id": "31200045671",
+ "username": "travelwithmaya",
+ "fullName": "Maya",
+ "bio": "Travel stories and photos ✈️",
+ "externalUrl": "",
+ "bioLinks": [],
+ "profilePic": "/fixtures/img/pfp_travelwithmaya.png",
+ "isVerified": false,
+ "isPrivate": false,
+ "isBusiness": true,
+ "category": "",
+ "followers": 15300,
+ "following": 12,
+ "mediaCount": 410,
+ "posts": [
+  {
+   "id": "TWM001",
+   "shortcode": "TWM001",
+   "daysAgo": 1,
+   "caption": "Sunrise in Ladakh.",
+   "thumb": "/fixtures/img/post_maya_1.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/TWM001/"
+  }
+ ]
+}

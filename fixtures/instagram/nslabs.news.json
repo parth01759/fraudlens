@@ -1,0 +1,28 @@
+{
+ "platform": "instagram",
+ "id": "49980000112",
+ "username": "nslabs.news",
+ "fullName": "NS Labs News",
+ "bio": "Tech news from around the world.",
+ "externalUrl": "",
+ "bioLinks": [],
+ "profilePic": "/fixtures/img/pfp_nslabs.news.png",
+ "isVerified": false,
+ "isPrivate": false,
+ "isBusiness": true,
+ "category": "",
+ "followers": 880,
+ "following": 12,
+ "mediaCount": 95,
+ "posts": [
+  {
+   "id": "NSN001",
+   "shortcode": "NSN001",
+   "daysAgo": 2,
+   "caption": "Five security tips for the week.",
+   "thumb": "/fixtures/img/post_news_1.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/NSN001/"
+  }
+ ]
+}

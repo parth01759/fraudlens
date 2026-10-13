@@ -1,0 +1,46 @@
+{
+ "platform": "instagram",
+ "id": "1500000001",
+ "username": "northstarlabs",
+ "fullName": "Northstar Labs",
+ "bio": "Security apps for everyday life. Support: @northstar_support",
+ "externalUrl": "https://northstarlabs.com",
+ "bioLinks": [],
+ "profilePic": "/fixtures/img/pfp_northstarlabs.png",
+ "isVerified": true,
+ "isPrivate": false,
+ "isBusiness": true,
+ "category": "",
+ "followers": 48200,
+ "following": 12,
+ "mediaCount": 640,
+ "posts": [
+  {
+   "id": "NSL001",
+   "shortcode": "NSL001",
+   "daysAgo": 3,
+   "caption": "Northstar Secure 4.0 is here. Two-factor login, device alerts and a faster vault. Update from the App Store today.",
+   "thumb": "/fixtures/img/post_official_1.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/NSL001/"
+  },
+  {
+   "id": "NSL002",
+   "shortcode": "NSL002",
+   "daysAgo": 9,
+   "caption": "We will never ask for your password or OTP. Our only support account is @northstar_support.",
+   "thumb": "/fixtures/img/post_official_2.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/NSL002/"
+  },
+  {
+   "id": "NSL003",
+   "shortcode": "NSL003",
+   "daysAgo": 20,
+   "caption": "Meet the team behind Northstar Secure.",
+   "thumb": "/fixtures/img/post_official_3.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/NSL003/"
+  }
+ ]
+}

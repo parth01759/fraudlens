@@ -1,0 +1,28 @@
+{
+ "platform": "instagram",
+ "id": "55120044781",
+ "username": "northstarlabs.fanclub",
+ "fullName": "Northstar Fan Club",
+ "bio": "Fan page for Northstar Labs. Not affiliated. Tips, news and memes.",
+ "externalUrl": "",
+ "bioLinks": [],
+ "profilePic": "/fixtures/img/pfp_northstarlabs.fanclub.png",
+ "isVerified": false,
+ "isPrivate": false,
+ "isBusiness": true,
+ "category": "",
+ "followers": 4100,
+ "following": 12,
+ "mediaCount": 210,
+ "posts": [
+  {
+   "id": "FAN001",
+   "shortcode": "FAN001",
+   "daysAgo": 4,
+   "caption": "Our favourite feature in Northstar Secure 4.0? The new vault.",
+   "thumb": "/fixtures/img/post_fan_1.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/FAN001/"
+  }
+ ]
+}

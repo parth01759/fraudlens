@@ -1,0 +1,28 @@
+{
+ "platform": "instagram",
+ "id": "1500000777",
+ "username": "northstar_support",
+ "fullName": "Northstar Support",
+ "bio": "Official help for Northstar Labs products. We never DM first.",
+ "externalUrl": "https://northstarlabs.com/help",
+ "bioLinks": [],
+ "profilePic": "/fixtures/img/pfp_northstar_support.png",
+ "isVerified": true,
+ "isPrivate": false,
+ "isBusiness": true,
+ "category": "",
+ "followers": 9100,
+ "following": 12,
+ "mediaCount": 120,
+ "posts": [
+  {
+   "id": "NSS001",
+   "shortcode": "NSS001",
+   "daysAgo": 5,
+   "caption": "Maintenance tonight 11 pm to 1 am IST. Logins may be slow.",
+   "thumb": "/fixtures/img/post_official_4.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/NSS001/"
+  }
+ ]
+}

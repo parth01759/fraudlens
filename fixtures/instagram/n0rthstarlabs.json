@@ -1,0 +1,28 @@
+{
+ "platform": "instagram",
+ "id": "67990011223",
+ "username": "n0rthstarlabs",
+ "fullName": "Northstar Labs",
+ "bio": "Official account of Northstar Labs India. New account, our old page was hacked.",
+ "externalUrl": "",
+ "bioLinks": [],
+ "profilePic": "/fixtures/img/pfp_n0rthstarlabs.png",
+ "isVerified": true,
+ "isPrivate": false,
+ "isBusiness": true,
+ "category": "",
+ "followers": 1240,
+ "following": 12,
+ "mediaCount": 9,
+ "posts": [
+  {
+   "id": "N0L001",
+   "shortcode": "N0L001",
+   "daysAgo": 12,
+   "caption": "Follow our new official page for updates.",
+   "thumb": "/fixtures/img/post_giveaway_2.png",
+   "isVideo": false,
+   "url": "https://www.instagram.com/p/N0L001/"
+  }
+ ]
+}
