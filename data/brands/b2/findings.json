@@ -1,0 +1,295 @@
+{
+  "items": {
+    "app:1584729031": {
+      "status": "New",
+      "firstSeen": 1792852785866,
+      "history": [
+        {
+          "at": 1792852785866,
+          "text": "First seen: official / excluded"
+        }
+      ],
+      "lastSeen": 1792853815085,
+      "lastScore": 0,
+      "lastSeverity": "Official",
+      "prevScore": 0
+    },
+    "app:6450011923": {
+      "status": "New",
+      "firstSeen": 1792852785882,
+      "history": [
+        {
+          "at": 1792852785882,
+          "text": "First seen: score 80 (High)"
+        }
+      ],
+      "lastSeen": 1792853815086,
+      "lastScore": 80,
+      "lastSeverity": "High",
+      "prevScore": 80
+    },
+    "app:6471200456": {
+      "status": "New",
+      "firstSeen": 1792852785891,
+      "history": [
+        {
+          "at": 1792852785891,
+          "text": "First seen: score 72 (Medium)"
+        }
+      ],
+      "lastSeen": 1792853815088,
+      "lastScore": 72,
+      "lastSeverity": "Medium",
+      "prevScore": 72
+    },
+    "app:6399887766": {
+      "status": "New",
+      "firstSeen": 1792852785901,
+      "history": [
+        {
+          "at": 1792852785901,
+          "text": "First seen: score 12 (Low)"
+        }
+      ],
+      "lastSeen": 1792853815091,
+      "lastScore": 12,
+      "lastSeverity": "Low",
+      "prevScore": 12
+    },
+    "ig:northstar_supp0rt": {
+      "status": "New",
+      "firstSeen": 1792852795913,
+      "history": [
+        {
+          "at": 1792852795913,
+          "text": "First seen: score 100 (High)"
+        }
+      ],
+      "lastSeen": 1792853814978,
+      "lastScore": 100,
+      "lastSeverity": "High",
+      "prevScore": 100
+    },
+    "ig:northstarr.giveaway": {
+      "status": "New",
+      "firstSeen": 1792852795931,
+      "history": [
+        {
+          "at": 1792852795931,
+          "text": "First seen: score 75 (High)"
+        }
+      ],
+      "lastSeen": 1792853814991,
+      "lastScore": 75,
+      "lastSeverity": "High",
+      "prevScore": 75
+    },
+    "ig:n0rthstarlabs": {
+      "status": "New",
+      "firstSeen": 1792852795945,
+      "history": [
+        {
+          "at": 1792852795945,
+          "text": "First seen: score 84 (High)"
+        }
+      ],
+      "lastSeen": 1792853814999,
+      "lastScore": 84,
+      "lastSeverity": "High",
+      "prevScore": 84
+    },
+    "ig:northstarlabs.fanclub": {
+      "status": "New",
+      "firstSeen": 1792852795962,
+      "history": [
+        {
+          "at": 1792852795962,
+          "text": "First seen: score 3 (Low)"
+        }
+      ],
+      "lastSeen": 1792853815008,
+      "lastScore": 3,
+      "lastSeverity": "Low",
+      "prevScore": 3
+    },
+    "ig:nslabs.news": {
+      "status": "New",
+      "firstSeen": 1792852795979,
+      "history": [
+        {
+          "at": 1792852795979,
+          "text": "First seen: score 0 (Low)"
+        }
+      ],
+      "lastSeen": 1792853815017,
+      "lastScore": 0,
+      "lastSeverity": "Low",
+      "prevScore": 0
+    },
+    "ig:travelwithmaya": {
+      "status": "New",
+      "firstSeen": 1792852795994,
+      "history": [
+        {
+          "at": 1792852795994,
+          "text": "First seen: score 0 (Low)"
+        }
+      ],
+      "lastSeen": 1792853815027,
+      "lastScore": 0,
+      "lastSeverity": "Low",
+      "prevScore": 0
+    },
+    "ig:northstarlabs": {
+      "status": "New",
+      "firstSeen": 1792852796002,
+      "history": [
+        {
+          "at": 1792852796002,
+          "text": "First seen: official / excluded"
+        }
+      ],
+      "lastSeen": 1792853815035,
+      "lastScore": 0,
+      "lastSeverity": "Official",
+      "prevScore": 0
+    }
+  },
+  "activity": [
+    {
+      "at": 1792853815091,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853815035,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853696069,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853696024,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853635080,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853635037,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853515102,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853515049,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853395128,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853395056,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853275093,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853275043,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853182125,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853182049,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853120971,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853120925,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853059969,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792853059920,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792852999036,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792852998994,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792852918087,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792852918035,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792852857087,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792852857034,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792852796050,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792852796002,
+      "text": "Instagram scan: 7 accounts, 3 high risk",
+      "kind": "high"
+    },
+    {
+      "at": 1792852785901,
+      "text": "App Store scan: 4 related apps, 1 high risk",
+      "kind": "high"
+    }
+  ]
+}

@@ -1,0 +1,1556 @@
+{
+  "instagram": {
+    "at": 1792853815035,
+    "results": [
+      {
+        "handle": "northstar_supp0rt",
+        "ok": true,
+        "profile": {
+          "platform": "instagram",
+          "id": "68110022451",
+          "username": "northstar_supp0rt",
+          "fullName": "Northstar Support ✔",
+          "bio": "Official Northstar support team. DM us your login email and password to restore access. WhatsApp +91 98765 43210",
+          "externalUrl": "",
+          "bioLinks": [],
+          "profilePic": "/fixtures/img/pfp_northstar_supp0rt.png",
+          "isVerified": false,
+          "isPrivate": false,
+          "isBusiness": true,
+          "category": "",
+          "followers": 37,
+          "following": 12,
+          "mediaCount": 2,
+          "posts": [
+            {
+              "id": "FK0001",
+              "shortcode": "FK0001",
+              "daysAgo": 1,
+              "caption": "Northstar Secure 4.0 is here. Two-factor login, device alerts and a faster vault. Update from the App Store today.",
+              "thumb": "/fixtures/img/post_supp0rt_1.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/FK0001/",
+              "takenAt": 1792767414973
+            },
+            {
+              "id": "FK0002",
+              "shortcode": "FK0002",
+              "daysAgo": 2,
+              "caption": "Account locked? Message us now, we reply in 5 minutes.",
+              "thumb": "/fixtures/img/post_giveaway_2.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/FK0002/",
+              "takenAt": 1792681014973
+            }
+          ],
+          "source": "demo",
+          "pfpHash": "1011000010101000101010100000111100001111001010101000100010101010"
+        },
+        "result": {
+          "excluded": false,
+          "score": 100,
+          "rawScore": 100,
+          "severity": "High",
+          "confidence": 100,
+          "guardrails": [],
+          "checks": [
+            {
+              "id": "S1",
+              "label": "Name similarity",
+              "max": 25,
+              "points": 25,
+              "status": "checked",
+              "evidence": [
+                "@northstar_supp0rt: Looks identical to @northstar_support once lookalike characters are read as letters."
+              ]
+            },
+            {
+              "id": "S2",
+              "label": "Lookalike characters",
+              "max": 10,
+              "points": 10,
+              "status": "checked",
+              "evidence": [
+                "Brand name disguised: \"0\" for \"o\""
+              ]
+            },
+            {
+              "id": "S3",
+              "label": "Account age",
+              "max": 8,
+              "points": 8,
+              "status": "checked",
+              "evidence": [
+                "Account ID is newer than every official account (created later).",
+                "First post 2 days ago; only 2 posts."
+              ]
+            },
+            {
+              "id": "S4",
+              "label": "Bio and contact details",
+              "max": 7,
+              "points": 7,
+              "status": "checked",
+              "evidence": [
+                "Bio or display name uses brand keywords.",
+                "Offers help or support.",
+                "Contact route not on the brand profile: phone number, WhatsApp."
+              ]
+            },
+            {
+              "id": "S5",
+              "label": "Profile picture and logo",
+              "max": 15,
+              "points": 15,
+              "status": "checked",
+              "evidence": [
+                "Profile picture matches your logo (fingerprint distance 7/64)."
+              ]
+            },
+            {
+              "id": "S6",
+              "label": "Verification badge",
+              "max": 10,
+              "points": 6,
+              "status": "checked",
+              "evidence": [
+                "Uses a check mark or \"verified\" in the name or bio without a real badge."
+              ]
+            },
+            {
+              "id": "S7",
+              "label": "False official claims",
+              "max": 20,
+              "points": 20,
+              "status": "checked",
+              "evidence": [
+                "Claims: calls itself official; offers customer support. Not on the official registry."
+              ]
+            },
+            {
+              "id": "S8",
+              "label": "Scam wording and links",
+              "max": 15,
+              "points": 12,
+              "status": "checked",
+              "evidence": [
+                "Wording: asks for login or verification; moves the conversation off-platform."
+              ]
+            },
+            {
+              "id": "S9",
+              "label": "Copied content",
+              "max": 10,
+              "points": 6,
+              "status": "checked",
+              "evidence": [
+                "Post FK0001 copies the caption of @northstarlabs's post NSL001 (posted later)."
+              ]
+            },
+            {
+              "id": "S10",
+              "label": "Context",
+              "max": 5,
+              "points": 5,
+              "status": "checked",
+              "evidence": [
+                "Only 37 followers for a close brand match."
+              ]
+            }
+          ],
+          "related": true,
+          "nameMatch": {
+            "s1": 25,
+            "s2": 10,
+            "kind": "disguised",
+            "target": "@northstar_support",
+            "detail": "Looks identical to @northstar_support once lookalike characters are read as letters.",
+            "substitutions": [
+              {
+                "ch": "0",
+                "as": "o",
+                "code": "U+0030"
+              }
+            ],
+            "field": "username"
+          },
+          "copies": [
+            {
+              "post": {
+                "id": "FK0001",
+                "shortcode": "FK0001",
+                "daysAgo": 1,
+                "caption": "Northstar Secure 4.0 is here. Two-factor login, device alerts and a faster vault. Update from the App Store today.",
+                "thumb": "/fixtures/img/post_supp0rt_1.png",
+                "isVideo": false,
+                "url": "https://www.instagram.com/p/FK0001/",
+                "takenAt": 1792767414973,
+                "thumbHash": "1111000100110001111000110100000100000011111000001110000011100000"
+              },
+              "of": {
+                "handle": "northstarlabs",
+                "shortcode": "NSL001",
+                "caption": "Northstar Secure 4.0 is here. Two-factor login, device alerts and a faster vault. Update from the App Store today.",
+                "takenAt": 1792594614954,
+                "thumbHash": "1111000100110001111000111100000110100011110010001110100011101000"
+              },
+              "kind": "caption"
+            }
+          ]
+        },
+        "cached": false
+      },
+      {
+        "handle": "northstarr.giveaway",
+        "ok": true,
+        "profile": {
+          "platform": "instagram",
+          "id": "68210088812",
+          "username": "northstarr.giveaway",
+          "fullName": "Northstarr Labs Giveaway",
+          "bio": "Win a prize today 🎁 Pay a small delivery fee and verify your login to claim.",
+          "externalUrl": "https://northstarr-rewards.com",
+          "bioLinks": [],
+          "profilePic": "/fixtures/img/pfp_northstarr.giveaway.png",
+          "isVerified": false,
+          "isPrivate": false,
+          "isBusiness": true,
+          "category": "",
+          "followers": 212,
+          "following": 12,
+          "mediaCount": 4,
+          "posts": [
+            {
+              "id": "GV0001",
+              "shortcode": "GV0001",
+              "daysAgo": 6,
+              "caption": "3 winners every day! Click the link in bio to claim your reward.",
+              "thumb": "/fixtures/img/post_giveaway_1.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/GV0001/",
+              "takenAt": 1792335414983
+            }
+          ],
+          "source": "demo",
+          "pfpHash": "1010001010001010101011101000111100001111100011101000101010100000"
+        },
+        "result": {
+          "excluded": false,
+          "score": 75,
+          "rawScore": 64,
+          "severity": "High",
+          "confidence": 100,
+          "guardrails": [
+            "Raised to 75: look-alike name plus two strong signals (guardrail 3)."
+          ],
+          "checks": [
+            {
+              "id": "S1",
+              "label": "Name similarity",
+              "max": 25,
+              "points": 25,
+              "status": "checked",
+              "evidence": [
+                "\"Northstarr Labs Giveaway\": \"northstarrlabs\" is 1 edit from Northstar Labs, with extra words."
+              ]
+            },
+            {
+              "id": "S2",
+              "label": "Lookalike characters",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No lookalike characters used to disguise the name."
+              ]
+            },
+            {
+              "id": "S3",
+              "label": "Account age",
+              "max": 8,
+              "points": 8,
+              "status": "checked",
+              "evidence": [
+                "Account ID is newer than every official account (created later).",
+                "First post 6 days ago; only 4 posts."
+              ]
+            },
+            {
+              "id": "S4",
+              "label": "Bio and contact details",
+              "max": 7,
+              "points": 3,
+              "status": "checked",
+              "evidence": [
+                "Bio or display name uses brand keywords."
+              ]
+            },
+            {
+              "id": "S5",
+              "label": "Profile picture and logo",
+              "max": 15,
+              "points": 8,
+              "status": "checked",
+              "evidence": [
+                "Profile picture resembles your logo (distance 11/64)."
+              ]
+            },
+            {
+              "id": "S6",
+              "label": "Verification badge",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Not verified."
+              ]
+            },
+            {
+              "id": "S7",
+              "label": "False official claims",
+              "max": 20,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No official or support claims."
+              ]
+            },
+            {
+              "id": "S8",
+              "label": "Scam wording and links",
+              "max": 15,
+              "points": 15,
+              "status": "checked",
+              "evidence": [
+                "Wording: prize or giveaway bait; asks for a fee; asks for login or verification.",
+                "Links to look-alike website northstarr-rewards.com."
+              ]
+            },
+            {
+              "id": "S9",
+              "label": "Copied content",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No posts copied from official accounts."
+              ]
+            },
+            {
+              "id": "S10",
+              "label": "Context",
+              "max": 5,
+              "points": 5,
+              "status": "checked",
+              "evidence": [
+                "Only 212 followers for a close brand match."
+              ]
+            }
+          ],
+          "related": true,
+          "nameMatch": {
+            "s1": 25,
+            "s2": 0,
+            "kind": "lookalike",
+            "target": "Northstar Labs",
+            "detail": "\"northstarrlabs\" is 1 edit from Northstar Labs, with extra words.",
+            "substitutions": [],
+            "field": "display name"
+          },
+          "copies": []
+        },
+        "cached": false
+      },
+      {
+        "handle": "n0rthstarlabs",
+        "ok": true,
+        "profile": {
+          "platform": "instagram",
+          "id": "67990011223",
+          "username": "n0rthstarlabs",
+          "fullName": "Northstar Labs",
+          "bio": "Official account of Northstar Labs India. New account, our old page was hacked.",
+          "externalUrl": "",
+          "bioLinks": [],
+          "profilePic": "/fixtures/img/pfp_n0rthstarlabs.png",
+          "isVerified": true,
+          "isPrivate": false,
+          "isBusiness": true,
+          "category": "",
+          "followers": 1240,
+          "following": 12,
+          "mediaCount": 9,
+          "posts": [
+            {
+              "id": "N0L001",
+              "shortcode": "N0L001",
+              "daysAgo": 12,
+              "caption": "Follow our new official page for updates.",
+              "thumb": "/fixtures/img/post_giveaway_2.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/N0L001/",
+              "takenAt": 1791817014995
+            }
+          ],
+          "source": "demo",
+          "pfpHash": "1000111010001010100011100000111100001111100010101000101010001010"
+        },
+        "result": {
+          "excluded": false,
+          "score": 84,
+          "rawScore": 84,
+          "severity": "High",
+          "confidence": 100,
+          "guardrails": [],
+          "checks": [
+            {
+              "id": "S1",
+              "label": "Name similarity",
+              "max": 25,
+              "points": 25,
+              "status": "checked",
+              "evidence": [
+                "@n0rthstarlabs: Looks identical to Northstar Labs once lookalike characters are read as letters."
+              ]
+            },
+            {
+              "id": "S2",
+              "label": "Lookalike characters",
+              "max": 10,
+              "points": 10,
+              "status": "checked",
+              "evidence": [
+                "Brand name disguised: \"0\" for \"o\""
+              ]
+            },
+            {
+              "id": "S3",
+              "label": "Account age",
+              "max": 8,
+              "points": 8,
+              "status": "checked",
+              "evidence": [
+                "Account ID is newer than every official account (created later).",
+                "First post 12 days ago; only 9 posts."
+              ]
+            },
+            {
+              "id": "S4",
+              "label": "Bio and contact details",
+              "max": 7,
+              "points": 3,
+              "status": "checked",
+              "evidence": [
+                "Bio or display name uses brand keywords."
+              ]
+            },
+            {
+              "id": "S5",
+              "label": "Profile picture and logo",
+              "max": 15,
+              "points": 8,
+              "status": "checked",
+              "evidence": [
+                "Profile picture resembles your logo (distance 12/64)."
+              ]
+            },
+            {
+              "id": "S6",
+              "label": "Verification badge",
+              "max": 10,
+              "points": 10,
+              "status": "checked",
+              "evidence": [
+                "Verified badge on an account that is not on the official registry but uses the brand: possible bought badge."
+              ]
+            },
+            {
+              "id": "S7",
+              "label": "False official claims",
+              "max": 20,
+              "points": 20,
+              "status": "checked",
+              "evidence": [
+                "Claims: calls itself official; claims to be a second / backup account; says the old account was hacked or disabled. Not on the official registry."
+              ]
+            },
+            {
+              "id": "S8",
+              "label": "Scam wording and links",
+              "max": 15,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No scam wording or suspicious links."
+              ]
+            },
+            {
+              "id": "S9",
+              "label": "Copied content",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No posts copied from official accounts."
+              ]
+            },
+            {
+              "id": "S10",
+              "label": "Context",
+              "max": 5,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No fan label or other context."
+              ]
+            }
+          ],
+          "related": true,
+          "nameMatch": {
+            "s1": 25,
+            "s2": 10,
+            "kind": "disguised",
+            "target": "Northstar Labs",
+            "detail": "Looks identical to Northstar Labs once lookalike characters are read as letters.",
+            "substitutions": [
+              {
+                "ch": "0",
+                "as": "o",
+                "code": "U+0030"
+              }
+            ],
+            "field": "username"
+          },
+          "copies": []
+        },
+        "cached": false
+      },
+      {
+        "handle": "northstarlabs.fanclub",
+        "ok": true,
+        "profile": {
+          "platform": "instagram",
+          "id": "55120044781",
+          "username": "northstarlabs.fanclub",
+          "fullName": "Northstar Fan Club",
+          "bio": "Fan page for Northstar Labs. Not affiliated. Tips, news and memes.",
+          "externalUrl": "",
+          "bioLinks": [],
+          "profilePic": "/fixtures/img/pfp_northstarlabs.fanclub.png",
+          "isVerified": false,
+          "isPrivate": false,
+          "isBusiness": true,
+          "category": "",
+          "followers": 4100,
+          "following": 12,
+          "mediaCount": 210,
+          "posts": [
+            {
+              "id": "FAN001",
+              "shortcode": "FAN001",
+              "daysAgo": 4,
+              "caption": "Our favourite feature in Northstar Secure 4.0? The new vault.",
+              "thumb": "/fixtures/img/post_fan_1.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/FAN001/",
+              "takenAt": 1792508215003
+            }
+          ],
+          "source": "demo",
+          "pfpHash": "1001000011100010111000001111110011111100111111101010111000010000"
+        },
+        "result": {
+          "excluded": false,
+          "score": 3,
+          "rawScore": 3,
+          "severity": "Low",
+          "confidence": 100,
+          "guardrails": [],
+          "checks": [
+            {
+              "id": "S1",
+              "label": "Name similarity",
+              "max": 25,
+              "points": 15,
+              "status": "checked",
+              "evidence": [
+                "@northstarlabs.fanclub: Contains Northstar Labs plus \"fanclub\"."
+              ]
+            },
+            {
+              "id": "S2",
+              "label": "Lookalike characters",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No lookalike characters used to disguise the name."
+              ]
+            },
+            {
+              "id": "S3",
+              "label": "Account age",
+              "max": 8,
+              "points": 5,
+              "status": "checked",
+              "evidence": [
+                "Account ID is newer than every official account (created later)."
+              ]
+            },
+            {
+              "id": "S4",
+              "label": "Bio and contact details",
+              "max": 7,
+              "points": 3,
+              "status": "checked",
+              "evidence": [
+                "Bio or display name uses brand keywords."
+              ]
+            },
+            {
+              "id": "S5",
+              "label": "Profile picture and logo",
+              "max": 15,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Closest match your logo: distance 30/64 (not similar)."
+              ]
+            },
+            {
+              "id": "S6",
+              "label": "Verification badge",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Not verified."
+              ]
+            },
+            {
+              "id": "S7",
+              "label": "False official claims",
+              "max": 20,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No official or support claims."
+              ]
+            },
+            {
+              "id": "S8",
+              "label": "Scam wording and links",
+              "max": 15,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No scam wording or suspicious links."
+              ]
+            },
+            {
+              "id": "S9",
+              "label": "Copied content",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No posts copied from official accounts."
+              ]
+            },
+            {
+              "id": "S10",
+              "label": "Context",
+              "max": 5,
+              "points": -20,
+              "status": "checked",
+              "evidence": [
+                "Labelled as fan, parody or unofficial."
+              ]
+            }
+          ],
+          "related": true,
+          "nameMatch": {
+            "s1": 15,
+            "s2": 0,
+            "kind": "contains",
+            "target": "Northstar Labs",
+            "detail": "Contains Northstar Labs plus \"fanclub\".",
+            "substitutions": [],
+            "field": "username"
+          },
+          "copies": []
+        },
+        "cached": false
+      },
+      {
+        "handle": "nslabs.news",
+        "ok": true,
+        "profile": {
+          "platform": "instagram",
+          "id": "49980000112",
+          "username": "nslabs.news",
+          "fullName": "NS Labs News",
+          "bio": "Tech news from around the world.",
+          "externalUrl": "",
+          "bioLinks": [],
+          "profilePic": "/fixtures/img/pfp_nslabs.news.png",
+          "isVerified": false,
+          "isPrivate": false,
+          "isBusiness": true,
+          "category": "",
+          "followers": 880,
+          "following": 12,
+          "mediaCount": 95,
+          "posts": [
+            {
+              "id": "NSN001",
+              "shortcode": "NSN001",
+              "daysAgo": 2,
+              "caption": "Five security tips for the week.",
+              "thumb": "/fixtures/img/post_news_1.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/NSN001/",
+              "takenAt": 1792681015012
+            }
+          ],
+          "source": "demo",
+          "pfpHash": "1001010000000100010000011101000010001100110000001101000010001000"
+        },
+        "result": {
+          "excluded": false,
+          "score": 0,
+          "rawScore": 0,
+          "severity": "Low",
+          "confidence": 100,
+          "guardrails": [],
+          "checks": [
+            {
+              "id": "S1",
+              "label": "Name similarity",
+              "max": 25,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Username and display name do not resemble the brand."
+              ]
+            },
+            {
+              "id": "S2",
+              "label": "Lookalike characters",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No lookalike characters used to disguise the name."
+              ]
+            },
+            {
+              "id": "S3",
+              "label": "Account age",
+              "max": 8,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Account ID is newer than every official account (created later).",
+                "Not counted: nothing links this account to the brand."
+              ]
+            },
+            {
+              "id": "S4",
+              "label": "Bio and contact details",
+              "max": 7,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Nothing brand-related in the bio."
+              ]
+            },
+            {
+              "id": "S5",
+              "label": "Profile picture and logo",
+              "max": 15,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Closest match your logo: distance 31/64 (not similar)."
+              ]
+            },
+            {
+              "id": "S6",
+              "label": "Verification badge",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Not verified."
+              ]
+            },
+            {
+              "id": "S7",
+              "label": "False official claims",
+              "max": 20,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No official or support claims."
+              ]
+            },
+            {
+              "id": "S8",
+              "label": "Scam wording and links",
+              "max": 15,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No scam wording or suspicious links."
+              ]
+            },
+            {
+              "id": "S9",
+              "label": "Copied content",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No posts copied from official accounts."
+              ]
+            },
+            {
+              "id": "S10",
+              "label": "Context",
+              "max": 5,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No fan label or other context."
+              ]
+            }
+          ],
+          "related": false,
+          "nameMatch": {
+            "s1": 0,
+            "s2": 0,
+            "kind": "none",
+            "target": "",
+            "detail": "No resemblance to the brand name.",
+            "substitutions": [],
+            "field": "username"
+          },
+          "copies": []
+        },
+        "cached": false
+      },
+      {
+        "handle": "travelwithmaya",
+        "ok": true,
+        "profile": {
+          "platform": "instagram",
+          "id": "31200045671",
+          "username": "travelwithmaya",
+          "fullName": "Maya",
+          "bio": "Travel stories and photos ✈️",
+          "externalUrl": "",
+          "bioLinks": [],
+          "profilePic": "/fixtures/img/pfp_travelwithmaya.png",
+          "isVerified": false,
+          "isPrivate": false,
+          "isBusiness": true,
+          "category": "",
+          "followers": 15300,
+          "following": 12,
+          "mediaCount": 410,
+          "posts": [
+            {
+              "id": "TWM001",
+              "shortcode": "TWM001",
+              "daysAgo": 1,
+              "caption": "Sunrise in Ladakh.",
+              "thumb": "/fixtures/img/post_maya_1.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/TWM001/",
+              "takenAt": 1792767415022
+            }
+          ],
+          "source": "demo",
+          "pfpHash": "0010011010001100000011101000011011001100110100001101000011010000"
+        },
+        "result": {
+          "excluded": false,
+          "score": 0,
+          "rawScore": 0,
+          "severity": "Low",
+          "confidence": 100,
+          "guardrails": [],
+          "checks": [
+            {
+              "id": "S1",
+              "label": "Name similarity",
+              "max": 25,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Username and display name do not resemble the brand."
+              ]
+            },
+            {
+              "id": "S2",
+              "label": "Lookalike characters",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No lookalike characters used to disguise the name."
+              ]
+            },
+            {
+              "id": "S3",
+              "label": "Account age",
+              "max": 8,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Account ID is newer than every official account (created later).",
+                "Not counted: nothing links this account to the brand."
+              ]
+            },
+            {
+              "id": "S4",
+              "label": "Bio and contact details",
+              "max": 7,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Nothing brand-related in the bio."
+              ]
+            },
+            {
+              "id": "S5",
+              "label": "Profile picture and logo",
+              "max": 15,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Closest match your logo: distance 29/64 (not similar)."
+              ]
+            },
+            {
+              "id": "S6",
+              "label": "Verification badge",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Not verified."
+              ]
+            },
+            {
+              "id": "S7",
+              "label": "False official claims",
+              "max": 20,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No official or support claims."
+              ]
+            },
+            {
+              "id": "S8",
+              "label": "Scam wording and links",
+              "max": 15,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No scam wording or suspicious links."
+              ]
+            },
+            {
+              "id": "S9",
+              "label": "Copied content",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No posts copied from official accounts."
+              ]
+            },
+            {
+              "id": "S10",
+              "label": "Context",
+              "max": 5,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No fan label or other context."
+              ]
+            }
+          ],
+          "related": false,
+          "nameMatch": {
+            "s1": 0,
+            "s2": 0,
+            "kind": "none",
+            "target": "",
+            "detail": "No resemblance to the brand name.",
+            "substitutions": [],
+            "field": "username"
+          },
+          "copies": []
+        },
+        "cached": false
+      },
+      {
+        "handle": "northstarlabs",
+        "ok": true,
+        "profile": {
+          "platform": "instagram",
+          "id": "1500000001",
+          "username": "northstarlabs",
+          "fullName": "Northstar Labs",
+          "bio": "Security apps for everyday life. Support: @northstar_support",
+          "externalUrl": "https://northstarlabs.com",
+          "bioLinks": [],
+          "profilePic": "/fixtures/img/pfp_northstarlabs.png",
+          "isVerified": true,
+          "isPrivate": false,
+          "isBusiness": true,
+          "category": "",
+          "followers": 48200,
+          "following": 12,
+          "mediaCount": 640,
+          "posts": [
+            {
+              "id": "NSL001",
+              "shortcode": "NSL001",
+              "daysAgo": 3,
+              "caption": "Northstar Secure 4.0 is here. Two-factor login, device alerts and a faster vault. Update from the App Store today.",
+              "thumb": "/fixtures/img/post_official_1.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/NSL001/",
+              "takenAt": 1792594615031
+            },
+            {
+              "id": "NSL002",
+              "shortcode": "NSL002",
+              "daysAgo": 9,
+              "caption": "We will never ask for your password or OTP. Our only support account is @northstar_support.",
+              "thumb": "/fixtures/img/post_official_2.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/NSL002/",
+              "takenAt": 1792076215031
+            },
+            {
+              "id": "NSL003",
+              "shortcode": "NSL003",
+              "daysAgo": 20,
+              "caption": "Meet the team behind Northstar Secure.",
+              "thumb": "/fixtures/img/post_official_3.png",
+              "isVideo": false,
+              "url": "https://www.instagram.com/p/NSL003/",
+              "takenAt": 1791125815031
+            }
+          ],
+          "source": "demo",
+          "pfpHash": "1011010010001010101010100000111100001111101010101000110010101100"
+        },
+        "result": {
+          "excluded": true,
+          "reason": "official",
+          "score": 0,
+          "severity": "Official",
+          "checks": [],
+          "confidence": 100,
+          "guardrails": [
+            "On the official registry: never scored."
+          ]
+        },
+        "cached": false
+      }
+    ],
+    "official": [
+      {
+        "handle": "northstarlabs",
+        "ok": true,
+        "verified": true,
+        "followers": 48200,
+        "cached": false,
+        "limited": false
+      },
+      {
+        "handle": "northstar_support",
+        "ok": true,
+        "verified": true,
+        "followers": 9100,
+        "cached": false,
+        "limited": false
+      }
+    ],
+    "partial": false,
+    "logoCount": 3,
+    "officialPostCount": 4
+  },
+  "appstore": {
+    "at": 1792853815091,
+    "country": "in",
+    "terms": [
+      "Northstar"
+    ],
+    "results": [
+      {
+        "app": {
+          "trackId": "6450011923",
+          "name": "Northstar Secure",
+          "bundleId": "com.northstar.secure.clone",
+          "seller": "NovaPeak Studio",
+          "artistId": "913377",
+          "artistName": "NovaPeak Studio",
+          "sellerUrl": "https://novapeak.example",
+          "description": "The official Northstar Secure companion. Northstar Secure keeps your accounts safe with two-factor login and device alerts. Enter your account credentials and verify your login to sync.",
+          "icon": "/fixtures/img/icon_clone.png",
+          "releaseDate": "2026-09-02T08:00:00Z",
+          "genre": "Utilities",
+          "ratingCount": 6,
+          "rating": 4.1,
+          "url": "https://apps.apple.com/in/app/id6450011923",
+          "price": "Free",
+          "version": "1.0",
+          "iconHash": "0000000010001010101011000000111100001111100011001000100010101100"
+        },
+        "result": {
+          "excluded": false,
+          "score": 80,
+          "rawScore": 80,
+          "severity": "High",
+          "confidence": 100,
+          "guardrails": [],
+          "checks": [
+            {
+              "id": "A1",
+              "label": "App name similarity",
+              "max": 25,
+              "points": 25,
+              "status": "checked",
+              "evidence": [
+                "\"Northstar Secure\": Same name as the official app Northstar Secure."
+              ]
+            },
+            {
+              "id": "A2",
+              "label": "Bundle ID impersonation",
+              "max": 15,
+              "points": 15,
+              "status": "checked",
+              "evidence": [
+                "\"com.northstar.secure.clone\" extends the official ID com.northstar.secure."
+              ]
+            },
+            {
+              "id": "A3",
+              "label": "Publisher mismatch",
+              "max": 15,
+              "points": 10,
+              "status": "checked",
+              "evidence": [
+                "Developer \"NovaPeak Studio\" is not an official publisher.",
+                "Developer website novapeak.example is not an official domain."
+              ]
+            },
+            {
+              "id": "A4",
+              "label": "Icon similarity",
+              "max": 15,
+              "points": 8,
+              "status": "checked",
+              "evidence": [
+                "Icon resembles your logo (distance 10/64)."
+              ]
+            },
+            {
+              "id": "A5",
+              "label": "Description and branding",
+              "max": 10,
+              "points": 9,
+              "status": "checked",
+              "evidence": [
+                "Claims: calls itself official.",
+                "Mentions 2 brand keywords."
+              ]
+            },
+            {
+              "id": "A6",
+              "label": "Risky behaviour",
+              "max": 10,
+              "points": 5,
+              "status": "checked",
+              "evidence": [
+                "Wording: asks for login or verification."
+              ]
+            },
+            {
+              "id": "A7",
+              "label": "Release date and reputation",
+              "max": 5,
+              "points": 5,
+              "status": "checked",
+              "evidence": [
+                "Released after the official app.",
+                "Only 6 ratings."
+              ]
+            },
+            {
+              "id": "A8",
+              "label": "Category match",
+              "max": 3,
+              "points": 3,
+              "status": "checked",
+              "evidence": [
+                "Same category as the official app (Utilities)."
+              ]
+            },
+            {
+              "id": "A9",
+              "label": "Disclaimer",
+              "max": 0,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No disclaimer."
+              ]
+            }
+          ],
+          "related": true,
+          "nameMatch": {
+            "s1": 25,
+            "s2": 0,
+            "kind": "exact",
+            "target": "Northstar Secure",
+            "detail": "Same name as the official app Northstar Secure.",
+            "substitutions": []
+          }
+        }
+      },
+      {
+        "app": {
+          "trackId": "6471200456",
+          "name": "N0rthstar Wallet",
+          "bundleId": "com.n0rthstar.wallet",
+          "seller": "Unknown Labs LLC",
+          "artistId": "913500",
+          "artistName": "Unknown Labs LLC",
+          "sellerUrl": "",
+          "description": "Official Northstar wallet. Sign in, verify your KYC and earn crypto rewards. Refunds processed within 24 hours.",
+          "icon": "/fixtures/img/icon_wallet.png",
+          "releaseDate": "2026-08-14T08:00:00Z",
+          "genre": "Finance",
+          "ratingCount": 11,
+          "rating": 4.1,
+          "url": "https://apps.apple.com/in/app/id6471200456",
+          "price": "Free",
+          "version": "1.0",
+          "iconHash": "1011001000001100100010100000111100001111100011001000101010110110"
+        },
+        "result": {
+          "excluded": false,
+          "score": 72,
+          "rawScore": 72,
+          "severity": "Medium",
+          "confidence": 100,
+          "guardrails": [],
+          "checks": [
+            {
+              "id": "A1",
+              "label": "App name similarity",
+              "max": 25,
+              "points": 20,
+              "status": "checked",
+              "evidence": [
+                "\"N0rthstar Wallet\": Contains Northstar plus \"wallet\"."
+              ]
+            },
+            {
+              "id": "A2",
+              "label": "Bundle ID impersonation",
+              "max": 15,
+              "points": 10,
+              "status": "checked",
+              "evidence": [
+                "Bundle ID segment \"n0rthstar\" uses or imitates \"Northstar\"."
+              ]
+            },
+            {
+              "id": "A3",
+              "label": "Publisher mismatch",
+              "max": 15,
+              "points": 10,
+              "status": "checked",
+              "evidence": [
+                "Developer \"Unknown Labs LLC\" is not an official publisher."
+              ]
+            },
+            {
+              "id": "A4",
+              "label": "Icon similarity",
+              "max": 15,
+              "points": 8,
+              "status": "checked",
+              "evidence": [
+                "Icon resembles the official \"Northstar Secure\" icon (distance 13/64)."
+              ]
+            },
+            {
+              "id": "A5",
+              "label": "Description and branding",
+              "max": 10,
+              "points": 9,
+              "status": "checked",
+              "evidence": [
+                "Claims: calls itself official.",
+                "Mentions 1 brand keyword."
+              ]
+            },
+            {
+              "id": "A6",
+              "label": "Risky behaviour",
+              "max": 10,
+              "points": 10,
+              "status": "checked",
+              "evidence": [
+                "Wording: asks for login or verification; refund bait; investment or crypto bait."
+              ]
+            },
+            {
+              "id": "A7",
+              "label": "Release date and reputation",
+              "max": 5,
+              "points": 5,
+              "status": "checked",
+              "evidence": [
+                "Released after the official app.",
+                "Only 11 ratings."
+              ]
+            },
+            {
+              "id": "A8",
+              "label": "Category match",
+              "max": 3,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Category: Finance."
+              ]
+            },
+            {
+              "id": "A9",
+              "label": "Disclaimer",
+              "max": 0,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No disclaimer."
+              ]
+            }
+          ],
+          "related": true,
+          "nameMatch": {
+            "s1": 15,
+            "s2": 10,
+            "kind": "contains",
+            "target": "Northstar",
+            "detail": "Contains Northstar plus \"wallet\".",
+            "substitutions": [
+              {
+                "ch": "0",
+                "as": "o",
+                "code": "U+0030"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "app": {
+          "trackId": "6399887766",
+          "name": "Northstar Wallpapers HD",
+          "bundleId": "com.pixelfern.stars",
+          "seller": "Pixel Fern Studio",
+          "artistId": "920001",
+          "artistName": "Pixel Fern Studio",
+          "sellerUrl": "",
+          "description": "Fan-made space wallpapers inspired by the night sky. Not affiliated with any brand.",
+          "icon": "/fixtures/img/icon_wallpapers.png",
+          "releaseDate": "2025-11-01T08:00:00Z",
+          "genre": "Entertainment",
+          "ratingCount": 840,
+          "rating": 4.1,
+          "url": "https://apps.apple.com/in/app/id6399887766",
+          "price": "Free",
+          "version": "1.0",
+          "iconHash": "1010100101110010101000011000110011000101110000100010110011001010"
+        },
+        "result": {
+          "excluded": false,
+          "score": 12,
+          "rawScore": 12,
+          "severity": "Low",
+          "confidence": 100,
+          "guardrails": [],
+          "checks": [
+            {
+              "id": "A1",
+              "label": "App name similarity",
+              "max": 25,
+              "points": 15,
+              "status": "checked",
+              "evidence": [
+                "\"Northstar Wallpapers HD\": Contains Northstar plus \"wallpapers\"."
+              ]
+            },
+            {
+              "id": "A2",
+              "label": "Bundle ID impersonation",
+              "max": 15,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Bundle ID does not use the brand."
+              ]
+            },
+            {
+              "id": "A3",
+              "label": "Publisher mismatch",
+              "max": 15,
+              "points": 10,
+              "status": "checked",
+              "evidence": [
+                "Developer \"Pixel Fern Studio\" is not an official publisher."
+              ]
+            },
+            {
+              "id": "A4",
+              "label": "Icon similarity",
+              "max": 15,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Closest match the official \"Northstar Secure\" icon: distance 27/64 (not similar)."
+              ]
+            },
+            {
+              "id": "A5",
+              "label": "Description and branding",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Description does not resemble the brand."
+              ]
+            },
+            {
+              "id": "A6",
+              "label": "Risky behaviour",
+              "max": 10,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "No credential, payment or crypto bait."
+              ]
+            },
+            {
+              "id": "A7",
+              "label": "Release date and reputation",
+              "max": 5,
+              "points": 2,
+              "status": "checked",
+              "evidence": [
+                "Released after the official app."
+              ]
+            },
+            {
+              "id": "A8",
+              "label": "Category match",
+              "max": 3,
+              "points": 0,
+              "status": "checked",
+              "evidence": [
+                "Category: Entertainment."
+              ]
+            },
+            {
+              "id": "A9",
+              "label": "Disclaimer",
+              "max": 0,
+              "points": -15,
+              "status": "checked",
+              "evidence": [
+                "Says it is unofficial or fan-made."
+              ]
+            }
+          ],
+          "related": true,
+          "nameMatch": {
+            "s1": 15,
+            "s2": 0,
+            "kind": "contains",
+            "target": "Northstar",
+            "detail": "Contains Northstar plus \"wallpapers\".",
+            "substitutions": []
+          }
+        }
+      },
+      {
+        "app": {
+          "trackId": "1584729031",
+          "name": "Northstar Secure",
+          "bundleId": "com.northstar.secure",
+          "seller": "Northstar Labs Pvt Ltd",
+          "artistId": "900001",
+          "artistName": "Northstar Labs Pvt Ltd",
+          "sellerUrl": "https://northstarlabs.com",
+          "description": "Northstar Secure keeps your accounts safe with two-factor login, device alerts and an encrypted vault for passwords and documents.",
+          "icon": "/fixtures/img/icon_northstar_secure.png",
+          "releaseDate": "2021-03-10T08:00:00Z",
+          "genre": "Utilities",
+          "ratingCount": 18400,
+          "rating": 4.1,
+          "url": "https://apps.apple.com/in/app/id1584729031",
+          "price": "Free",
+          "version": "1.0",
+          "iconHash": "1010001010001010001010100000111100001111101010001010101010001010"
+        },
+        "result": {
+          "excluded": true,
+          "reason": "official",
+          "score": 0,
+          "severity": "Official",
+          "checks": [],
+          "confidence": 100,
+          "guardrails": [
+            "On the official registry: never scored."
+          ]
+        }
+      }
+    ],
+    "unrelated": 0,
+    "officialApps": [
+      {
+        "trackId": "1584729031",
+        "name": "Northstar Secure",
+        "bundleId": "com.northstar.secure",
+        "seller": "Northstar Labs Pvt Ltd",
+        "artistId": "900001",
+        "artistName": "Northstar Labs Pvt Ltd",
+        "sellerUrl": "https://northstarlabs.com",
+        "description": "Northstar Secure keeps your accounts safe with two-factor login, device alerts and an encrypted vault for passwords and documents.",
+        "icon": "/fixtures/img/icon_northstar_secure.png",
+        "releaseDate": "2021-03-10T08:00:00Z",
+        "genre": "Utilities",
+        "ratingCount": 18400,
+        "rating": 4.1,
+        "url": "https://apps.apple.com/in/app/id1584729031",
+        "price": "Free",
+        "version": "1.0"
+      }
+    ],
+    "warnings": [],
+    "partial": false
+  }
+}

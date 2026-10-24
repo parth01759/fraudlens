@@ -1,0 +1,33 @@
+{
+  "name": "Northstar Labs",
+  "aliases": [
+    "Northstar"
+  ],
+  "keywords": [
+    "Northstar Secure",
+    "northstar support"
+  ],
+  "genericWords": [],
+  "isCommonWord": false,
+  "domains": [
+    "northstarlabs.com"
+  ],
+  "instagram": [
+    "northstarlabs",
+    "northstar_support"
+  ],
+  "partners": [],
+  "apps": [
+    {
+      "label": "Northstar Secure",
+      "bundleId": "com.northstar.secure",
+      "trackId": "1584729031"
+    }
+  ],
+  "publishers": [
+    "Northstar Labs Pvt Ltd"
+  ],
+  "logo": "/fixtures/img/logo.png",
+  "logoHash": "1011010010001010101010100000111100001111101010101000110010101100",
+  "country": "in"
+}
